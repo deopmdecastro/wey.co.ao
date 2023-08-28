@@ -1,0 +1,704 @@
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+}
+
+
+/* nav*/
+
+header {
+
+  background-color: #ffffff;
+
+  color: #000000;
+
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.nav-logo img {
+  width: 100px;
+  /* Ajuste o tamanho do logotipo conforme necessário */
+}
+
+.nav-bar {
+
+  margin: 10px 60px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+
+
+.nav-brand {
+
+  font-size: 24px;
+
+  text-decoration: none;
+
+  color: #9900ff;
+
+}
+
+
+.bnt-login-1 {
+
+  margin-right: 10px;
+  padding: 10px;
+  background-color: transparent;
+  color: rgb(145, 55, 144);
+  border: 1px solid rgb(145, 55, 144);
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bnt-logon  {
+
+  margin-left: 10px;
+  padding: 10px;
+  background: rgb(145, 55, 144);
+  background: linear-gradient(120deg, rgba(145, 55, 144, 1) 0%, rgba(102, 45, 141, 1) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.nav-links {
+
+  display: none;
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+
+.nav-links.active {
+
+  display: flex;
+
+  flex-direction: column;
+
+  background-color: #222;
+
+  position: absolute;
+
+  top: 50px;
+
+  left: 0;
+
+  width: 100%;
+
+}
+
+
+
+.nav-links li {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+
+.nav-links a {
+
+  text-decoration: none;
+
+  color: rgb(145, 55, 144);
+
+  padding: 10px;
+
+  display: block;
+
+}
+
+
+
+.menu-icon {
+
+  display: block;
+
+  cursor: pointer;
+
+  font-size: 24px;
+
+}
+
+.sublist {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .nav-links {
+
+    display: flex;
+
+  }
+
+
+
+  .nav-links.active {
+
+    display: flex;
+
+    flex-direction: row;
+
+    background-color: transparent;
+
+    position: static;
+
+    width: auto;
+
+  }
+
+
+
+  .nav-links li {
+
+    margin: 0;
+
+    padding: 0;
+
+  }
+
+
+
+  .nav-links a {
+
+    padding: 10px 15px;
+
+  }
+
+
+
+  .menu-icon {
+
+    display: none;
+
+  }
+
+}
+
+/* end nav*/
+
+
+/* dashboard*/
+
+.dashboard-title {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding-bottom: 36px;
+}
+
+
+
+.idioma-title {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+  padding-bottom: 36px;
+  justify-content: center;
+  margin: 20px auto;
+  margin-bottom: 61px;
+  margin-top: 60px;
+}
+
+.idiomas p {
+max-width: 600px;
+}
+
+.factura-title {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+  padding-bottom: 36px;
+  justify-content: center;
+  margin: 20px auto;
+  margin-bottom: 61px;
+  margin-top: 60px;
+}
+
+.planos-title {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+  justify-content: center;
+  margin: 20px auto;
+  margin-bottom: 61px;
+  margin-top: 60px;
+}
+
+.detalhes-title {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+  justify-content: center;
+  margin: 20px auto;
+  margin-bottom: 61px;
+  margin-top: 60px;
+  padding-bottom: 36px;
+}
+
+#languageForm button{
+  cursor: pointer;
+  padding: 15px 25px;
+  background: rgb(145, 55, 144);
+  background: linear-gradient(120deg, rgba(145, 55, 144, 1) 0%, rgba(102, 45, 141, 1) 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+.card-dashboard {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+  text-align: center;
+  justify-content: center;
+  margin: 20px auto;
+  margin-bottom: 60px;
+  padding-bottom: 36px;
+}
+
+.dashboard {
+display: flex;
+box-sizing: border-box;
+justify-content: space-between;
+}
+
+.detalhes a {
+ text-decoration: none;
+ padding: 15px 25px;
+background: rgb(145, 55, 144);
+ background: linear-gradient(120deg, rgba(145, 55, 144, 1) 0%, rgba(102, 45, 141, 1) 100%);
+ color: #fff;
+ display: table-cell;
+ border-radius: 5px;
+ height: 5px;
+  }
+
+.plan{
+  background: rgb(145, 55, 144);
+  background: linear-gradient(120deg, rgba(145, 55, 144, 1) 0%, rgba(102, 45, 141, 1) 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 94px;
+}
+
+.plan h3 p a{
+ margin: 0px;
+}
+
+.plan h3{
+  color: #fff;
+ }
+
+ .plan p{
+  color: #fff;
+ }
+
+ .plan a{
+  color: #fff;
+  text-decoration: none;
+ }
+
+.detalhes, .factura {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.factura a{
+  text-decoration: none;
+  text-align: left;
+  margin-top: 10px;
+  justify-content: left;
+}
+
+.factura button{
+ background-color: transparent;
+ border: none;
+ color:  rgba(102, 45, 141, 1);
+}
+
+thead{
+  background-color: transparent;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.account-user{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.account-id p {
+  margin-top: 0px;
+  }
+  
+  .account-id h1 {
+    margin-bottom: 0px;
+    }
+  
+
+.user p {
+margin-top: 0px;
+}
+
+.user h2 {
+  margin-bottom: 0px;
+  }
+
+.img-user {
+  margin-right: 20px;
+  background: rgb(145, 55, 144);
+  background: linear-gradient(120deg, rgba(145, 55, 144, 1) 0%, rgba(102, 45, 141, 1) 100%);
+  color: #fff;
+  padding: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+
+.bnt-show-factura{
+  cursor: pointer;
+}
+
+.icon-logut i{
+  cursor: pointer;
+  margin-left: 20px;
+  background: rgb(145, 55, 144);
+  background: linear-gradient(120deg, rgba(145, 55, 144, 1) 0%, rgba(102, 45, 141, 1) 100%);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);;
+}
+
+
+.card-planos {
+ border: 1px solid  rgba(41, 41, 41, 0.055);
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.img-planos {
+  background: rgb(145, 55, 144);
+  background: linear-gradient(120deg, rgba(145, 55, 144, 1) 0%, rgba(102, 45, 141, 1) 100%);
+  color: #fff;
+  width: 250px;
+  border-radius: 5px;
+
+}
+
+.img-planos img {
+  width: 250px;
+  border-radius: 5px;
+
+}
+
+.descrition-planos {
+  margin: 31px 0px 31px 0px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.descrition-planos li{
+  margin: 20px 0px 20px 0px;
+  list-style-type: none;
+}
+
+.descrition-planos i{
+  color: rgb(145, 55, 144);
+}
+
+
+.price-planos {
+  margin: 60px 60px 60px;
+  padding-right: 20px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+ 
+  border-radius: 5px;
+  text-align: center;
+}
+
+.price-planos a {
+  text-decoration: none;
+  padding: 15px 25px;
+ background: rgb(145, 55, 144);
+  background: linear-gradient(120deg, rgba(145, 55, 144, 1) 0%, rgba(102, 45, 141, 1) 100%);
+  color: #fff;
+  border-radius: 5px;
+  display: block;
+}
+
+.btn-subscrever{
+  margin-top: 0px;
+}
+
+     /* Estilizando o botão de rádio oculto */
+     .custom-radio input[type="radio"] {
+      display: none; /* Ocultar o botão de rádio padrão */
+  }
+
+  /* Estilizando a nova representação do botão de rádio */
+  .custom-radio label {
+    margin-bottom: 10px;
+      display: inline-block;
+      position: relative;
+      padding-left: 20px; /* Ajuste o espaçamento do botão */
+      cursor: pointer;
+  }
+
+  .custom-radio label::before {
+      content: "";
+      display: inline-block;
+      width: 10px; /* Tamanho do botão de rádio personalizado */
+      height: 10px; /* Tamanho do botão de rádio personalizado */
+      border: 1px solid rgba(102, 45, 141, 1); /* Cor da borda do botão de rádio */
+      border-radius: 50%; /* Tornar o botão de rádio redondo */
+      position: absolute;
+      left: 0;
+      top: 1px; /* Ajuste vertical para centralizar o botão */
+  }
+
+  /* Estilizando o botão de rádio quando estiver selecionado */
+  .custom-radio input[type="radio"]:checked + label::before {
+    background: linear-gradient(120deg, rgba(145, 55, 144, 1) 0%, rgba(102, 45, 141, 1) 100%); /* Cor de preenchimento quando selecionado */
+  }
+
+
+
+
+/* dashboard*/
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="tel"], select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 100px;
+}
+
+ input[type="email"], select {
+  width: 624px;
+  padding: 10px;
+  margin-bottom: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 100px;
+}
+
+input[type="date"] {
+  width: 298px;
+  padding: 10px;
+  margin-bottom: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn-detalhes {
+    background: rgb(145, 55, 144);
+    background: linear-gradient(120deg, rgba(145, 55, 144, 1) 0%, rgba(102, 45, 141, 1) 100%);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+.detalhes-flex {
+  display: flex;
+}
+
+.detalhes-margin {
+  margin-bottom: 30px;
+  margin-right: 40px;
+}
+
+/* footer*/
+
+/* Estilos para o rodapé */
+footer {
+  background-color: rgba(102, 45, 141, 1);
+  color: #fff;
+  padding: 0px 0 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+
+.footer-logo img {
+  width: 100px;
+  /* Ajuste o tamanho do logotipo conforme necessário */
+}
+
+.footer-social a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+  /* Cor de destaque quando o mouse passa por cima */
+}
+
+.footer-solutions,
+.footer-products,
+.footer-company,
+.footer-apps {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-solutions h3,
+.footer-products h3,
+.footer-company h3,
+.footer-apps h3 {
+  margin-bottom: 10px;
+}
+
+.footer-solutions ul,
+.footer-products ul,
+.footer-company ul,
+.footer-apps ul {
+  list-style: none;
+}
+
+.footer-solutions li,
+.footer-products li,
+.footer-company li,
+.footer-apps li {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.footer-company a {
+  color: #ffffff;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.footer-apps a {
+  color: #ff0000;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.footer-apps img {
+  color: #ff0000;
+  width: 50%;
+}
+
+.footer-company a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background: rgb(145, 55, 144);
+  background: linear-gradient(120deg, rgba(145, 55, 144, 1) 0%, rgba(102, 45, 141, 1) 100%);
+  color: #fff;
+}
+
+/* fim footer*/

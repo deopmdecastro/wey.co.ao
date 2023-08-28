@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Wey</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="nav-bar">
+
+      <a class="nav-brand" href="#">
+
+        <div class="nav-logo">
+          <img src="assets/img/logo_wey.png" alt="Logotipo da WEY">
+        </div>
+
+      </a>
+
+      <span class="menu-icon" onclick="toggleMenu()">☰</span>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li><a href="index.html">Inicio</a></li>
+
+        <li><a href="#">Serviços <button onclick="mostrarOcultarsublists('sublists', this)"><i
+                class="fa fa-caret-down"></i></button></a>
+          <ul id="sublists" class="sublist">
+            <li>Streaming</li>
+            <li>Multimídia</li>
+          </ul>
+        </li>
+
+        <li><a href="about-us.html">Sobre</a></li>
+
+        <li><a class="bnt-login-1" href="login.html">Entrar</a></li>
+
+        <li><a class="bnt-logon" href="#">Criar conta</a></li>
+
+        <li><span class="menu-icon" onclick="toggleMenu()">✕</span></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <div class="payment-method">
+
+    <h1>Método de pagamento</h1>
+
+    <div class="choose-method">
+
+      <div class="method" id="method2">
+        <h2>Escolha o método de pagamento</h2>
+
+        <div class="choose2">
+          <div class="choose-m">
+            <img src="assets/icon/unitel.png" alt="">
+          </div>
+          <div class="choose-m">
+            <img src="assets/icon/unitel.png" alt="">
+          </div>
+          <div class="choose-m">
+            <img src="assets/icon/unitel.png" alt="">
+          </div>
+          <div class="choose-m">
+            <img src="assets/icon/unitel.png" alt="">
+          </div>
+        </div>
+
+        <p>Insira o seu número de telefone associado
+          ao Unitel Money, clique em Próximo passo e
+          de seguida aprove o pagamento no seu
+          dispositivo.</p>
+
+          <form action="processar.php" method="post">
+
+          <div class="checkbox">
+<input type="checkbox" id="pagamento-automatico" name="pagamento-automatico">
+            <label for="pagamento-automatico">Pagamentos automáticos</label>
+          </div>
+            <label for="numero-telefone">Número de Telefone</label>
+            <input type="text" placeholder="Insira o seu número de telefone" id="numero-telefone" name="numero-telefone"><br><br>
+            
+            <input class="btn" type="submit" value="Próximo passo">
+        </form>
+
+      </div>
+
+      <div class="pricing-card">
+        <h2>WEY MAX</h2>
+        <div class="price">
+          <p>TOTAL: 15.000,00 KZ</p>
+        </div>
+        <ul>
+          <li> <i class="fa-solid fa-check"></i> Filmes ilimitados</li>
+          <li> <i class="fa-solid fa-check"></i> Séries ilimitados</li>
+          <li> <i class="fa-solid fa-check"></i> Canais de TV</li>
+          <li> <i class="fa-solid fa-check"></i> 3 dispositivos</li>
+          <li> <i class="fa-solid fa-check"></i> Suporte 24/7</li>
+        </ul>
+        <button class="bnt-alterar" >Alterar plano</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <h1></h1>
+
+  <!-- footer-->
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-flex">
+        <div class="footer-logo">
+          <img src="assets/img/logo_wey_branco.png" alt="Logotipo da WEY">
+        </div>
+        <div class="footer-social">
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+          <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer-flex">
+        <div class="footer-solutions">
+          <h3>Soluções</h3>
+          <ul>
+            <li>TV na Internet</li>
+            <li>Hospedagem</li>
+            <li>Streaming</li>
+          </ul>
+        </div>
+        <div class="footer-products">
+          <h3>Produtos</h3>
+          <ul>
+            <li>Aplicativos Móveis</li>
+            <li>Tecnologia WEY</li>
+            <li>Servidores WEY</li>
+          </ul>
+        </div>
+        <div class="footer-company">
+          <h3>Empresa</h3>
+          <ul>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos e Condições</a></li>
+            <li><a href="#">Recrutamento</a></li>
+          </ul>
+        </div>
+        <div class="footer-apps">
+          <h3>Baixe o Aplicativo</h3>
+          <ul>
+            <li><a href="#"> <img src="assets/icon/1.png" alt="Disponível no Google Play"></a></li>
+            <li><a href="#"> <img src="assets/icon/3.png" alt="Disponível na App Store"> </a></li>
+            <li><a href="#"> <img src="assets/icon/2.png" alt="Disponível na Galaxy Store"> </a></li>
+          </ul>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="copyright">
+      <p>Todos os Direitos Reservados WEY MEDIA LDA ® 2023</p>
+    </div>
+
+  </footer>
+
+  <!-- footer-->
+
+
+
+
+  <script src="assets/js/scripts.js"></script>
+
+
+</body>
+
+</html>

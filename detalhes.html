@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style-dashboard.css">
+
+  <title>Wey</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="nav-bar">
+
+      <a class="nav-brand" href="#">
+
+        <div class="nav-logo">
+          <img src="assets/img/logo_wey.png" alt="Logotipo da WEY">
+        </div>
+
+      </a>
+
+      <span class="menu-icon" onclick="toggleMenu()">☰</span>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li><a href="account.html">Minha Conta</a></li>
+
+        <li><a href="planos.html">Planos</a> </li>
+
+        <li><a href="factura.html">Facturas</a></li>
+
+        <li><a href="idioma.html">Idiomas</a></li>
+        <li><span class="menu-icon" onclick="toggleMenu()">✕</span></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- dashboard-->
+
+  <main>
+
+    <div class="detalhes-title">
+
+      <div class="detalhes">
+        <h1>Detalhes</h1>
+        <p>Período de subscrição : 2023-09-08T12:29:26Z</p>
+      </div>
+      <div class="form-detalhes">
+
+        <form action="processar-formulario.php" method="post">
+
+          <div>
+            <div class="detalhes-flex">
+
+              <div class="detalhes-margin">
+                <label for="primeiro-nome">Primeiro Nome</label>
+                <input type="text" id="primeiro-nome" name="primeiro-nome" required>
+              </div>
+
+              <div class="detalhes-margin">
+                <label for="ultimo-nome">Último Nome</label>
+                <input type="text" id="ultimo-nome" name="ultimo-nome" required>
+              </div>
+
+            </div>
+
+            <div class="detalhes-flex">
+
+              <div class="detalhes-margin">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+              </div>
+
+              <div class="detalhes-margin">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" required>
+              </div>
+
+            </div>
+
+            <div class="detalhes-margin">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="detalhes-flex">
+
+              <div class="detalhes-margin">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" required>
+              </div>
+
+              <div class="detalhes-margin">
+                <label for="codigo-postal">Código Postal</label>
+                <input type="text" id="codigo-postal" name="codigo-postal" required>
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+          <div class="detalhes-flex">
+
+            <div class="detalhes-margin">
+              <label for="pais">País</label>
+              <input type="text" id="pais" name="pais" required>
+            </div>
+
+            <div class="detalhes-margin">
+              <label for="provincia">Província</label>
+              <input type="text" id="provincia" name="provincia" required>
+            </div>
+
+          </div>
+
+
+          <div class="detalhes-flex">
+
+            <div class="detalhes-margin">
+              <label for="lingua">Língua</label>
+              <input type="text" id="lingua" name="lingua" required>
+            </div>
+
+            <div class="detalhes-margin">
+              <label for="timezone">TimeZone</label>
+              <input type="text" id="timezone" name="timezone" required>
+            </div>
+
+          </div>
+
+          <div class="detalhes-flex">
+
+            <div class="detalhes-margin">
+              <label for="codigo-pin">Código PIN</label>
+              <input type="text" id="codigo-pin" name="codigo-pin" required>
+            </div>
+
+            <div class="detalhes-margin">
+              <label for="data-nascimento">Data de Nascimento</label>
+              <input type="date" id="data-nascimento" name="data-nascimento" required>
+            </div>
+
+          </div>
+
+          <div class="detalhes-flex">
+
+            <button class="btn-detalhes" type="submit">Cancelar</button>
+            <button class="btn-detalhes" type="submit">Enviar</button>
+
+          </div>
+
+      </div>
+
+
+      </form>
+    </div>
+
+
+    </div>
+
+
+  </main>
+
+
+
+  <!-- dashboard-->
+
+
+
+
+  <!-- footer-->
+
+  <footer class="footer-dashboard">
+    <div class="copyright">
+      <p>Todos os Direitos Reservados WEY MEDIA LDA ® 2023</p>
+    </div>
+
+  </footer>
+
+  <!-- footer-->
+
+
+
+
+  <script src="assets/js/scripts.js"></script>
+
+
+</body>
+
+</html>

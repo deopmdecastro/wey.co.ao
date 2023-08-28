@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEY - Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container-login">
+        <h1>Bem-vindo ao WEY</h1>
+        <form action="processar_login.php" method="POST">
+            <label for="username">Nome do utilizador</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required>
+            
+            <a id="reset-password" href="reset-password.html">Esqueceu a senha?</a>
+            
+            <button class="bnt-login" type="submit">Entrar</button>
+        </form>
+        
+        <p>Ainda não esta inscrito ? <a class="link-login" href="inscrever.php">Inscreva-se</a></p>
+        <p> <a class="link-login" href="index.html"> Voltar para a Home</a></p>
+    </div>
+</body>
+</html>
